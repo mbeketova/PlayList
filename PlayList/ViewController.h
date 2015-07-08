@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+#import <MagicalRecord/MagicalRecordShorthandMethodAliases.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
 
 
 @end

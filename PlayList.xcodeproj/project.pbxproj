@@ -15,6 +15,11 @@
 		848840661B4AC6B3006A5B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848840651B4AC6B3006A5B67 /* Images.xcassets */; };
 		848840691B4AC6B3006A5B67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848840671B4AC6B3006A5B67 /* LaunchScreen.xib */; };
 		848840751B4AC6B3006A5B67 /* PlayListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848840741B4AC6B3006A5B67 /* PlayListTests.m */; };
+		84A389671B4CF43100C043CB /* SingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A389651B4CF43100C043CB /* SingModel.xcdatamodeld */; };
+		84A389771B4D8F8000C043CB /* SingsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A389761B4D8F8000C043CB /* SingsDetails.m */; };
+		84A7ECF21B4C052D00FCEBEF /* ManagerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7ECF11B4C052D00FCEBEF /* ManagerAPI.m */; };
+		84AD83E21B4C30AD00C2C446 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD83E11B4C30AD00C2C446 /* CustomTableViewCell.m */; };
+		D2C725CD26618BF563949637 /* libPods-PlayList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC261A40396294D72C55FBF7 /* libPods-PlayList.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41AD589B6845B822258FCE72 /* Pods-PlayList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayList/Pods-PlayList.debug.xcconfig"; sourceTree = "<group>"; };
+		45C498970CEE9F94ECD91181 /* Pods-PlayList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayList.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayList/Pods-PlayList.release.xcconfig"; sourceTree = "<group>"; };
 		848840521B4AC6B3006A5B67 /* PlayList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848840561B4AC6B3006A5B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848840571B4AC6B3006A5B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +49,14 @@
 		8488406E1B4AC6B3006A5B67 /* PlayListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848840731B4AC6B3006A5B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848840741B4AC6B3006A5B67 /* PlayListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayListTests.m; sourceTree = "<group>"; };
+		84A389661B4CF43100C043CB /* SingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SingModel.xcdatamodel; sourceTree = "<group>"; };
+		84A389751B4D8F8000C043CB /* SingsDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingsDetails.h; sourceTree = "<group>"; };
+		84A389761B4D8F8000C043CB /* SingsDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingsDetails.m; sourceTree = "<group>"; };
+		84A7ECF01B4C052D00FCEBEF /* ManagerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerAPI.h; sourceTree = "<group>"; };
+		84A7ECF11B4C052D00FCEBEF /* ManagerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerAPI.m; sourceTree = "<group>"; };
+		84AD83E01B4C30AD00C2C446 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		84AD83E11B4C30AD00C2C446 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		BC261A40396294D72C55FBF7 /* libPods-PlayList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C725CD26618BF563949637 /* libPods-PlayList.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5FC56037416FAF6D7F8EDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41AD589B6845B822258FCE72 /* Pods-PlayList.debug.xcconfig */,
+				45C498970CEE9F94ECD91181 /* Pods-PlayList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84608B581B4C07E300CAB9DD /* ManagerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				84A7ECF01B4C052D00FCEBEF /* ManagerAPI.h */,
+				84A7ECF11B4C052D00FCEBEF /* ManagerAPI.m */,
+			);
+			name = ManagerAPI;
+			sourceTree = "<group>";
+		};
 		848840491B4AC6B3006A5B67 = {
 			isa = PBXGroup;
 			children = (
+				84A3896E1B4CF82900C043CB /* CoreDataMagic */,
+				84608B581B4C07E300CAB9DD /* ManagerAPI */,
 				848840541B4AC6B3006A5B67 /* PlayList */,
 				848840711B4AC6B3006A5B67 /* PlayListTests */,
 				848840531B4AC6B3006A5B67 /* Products */,
+				7C5FC56037416FAF6D7F8EDB /* Pods */,
+				AD763392274A2FE5981F0280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +125,8 @@
 				8488405A1B4AC6B3006A5B67 /* AppDelegate.m */,
 				8488405F1B4AC6B3006A5B67 /* ViewController.h */,
 				848840601B4AC6B3006A5B67 /* ViewController.m */,
+				84AD83E01B4C30AD00C2C446 /* CustomTableViewCell.h */,
+				84AD83E11B4C30AD00C2C446 /* CustomTableViewCell.m */,
 				848840621B4AC6B3006A5B67 /* Main.storyboard */,
 				848840651B4AC6B3006A5B67 /* Images.xcassets */,
 				848840671B4AC6B3006A5B67 /* LaunchScreen.xib */,
@@ -122,6 +162,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84A3896E1B4CF82900C043CB /* CoreDataMagic */ = {
+			isa = PBXGroup;
+			children = (
+				84A389651B4CF43100C043CB /* SingModel.xcdatamodeld */,
+				84A389751B4D8F8000C043CB /* SingsDetails.h */,
+				84A389761B4D8F8000C043CB /* SingsDetails.m */,
+			);
+			name = CoreDataMagic;
+			sourceTree = "<group>";
+		};
+		AD763392274A2FE5981F0280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC261A40396294D72C55FBF7 /* libPods-PlayList.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848840781B4AC6B3006A5B67 /* Build configuration list for PBXNativeTarget "PlayList" */;
 			buildPhases = (
+				8652D4CB410FFC493E8E1EF2 /* Check Pods Manifest.lock */,
 				8488404E1B4AC6B3006A5B67 /* Sources */,
 				8488404F1B4AC6B3006A5B67 /* Frameworks */,
 				848840501B4AC6B3006A5B67 /* Resources */,
+				27E6540420B204C6334F6297 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +277,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27E6540420B204C6334F6297 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayList/Pods-PlayList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8652D4CB410FFC493E8E1EF2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8488404E1B4AC6B3006A5B67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +317,11 @@
 			files = (
 				8488405B1B4AC6B3006A5B67 /* AppDelegate.m in Sources */,
 				8488405E1B4AC6B3006A5B67 /* PlayList.xcdatamodeld in Sources */,
+				84A389771B4D8F8000C043CB /* SingsDetails.m in Sources */,
+				84A389671B4CF43100C043CB /* SingModel.xcdatamodeld in Sources */,
+				84A7ECF21B4C052D00FCEBEF /* ManagerAPI.m in Sources */,
 				848840611B4AC6B3006A5B67 /* ViewController.m in Sources */,
+				84AD83E21B4C30AD00C2C446 /* CustomTableViewCell.m in Sources */,
 				848840581B4AC6B3006A5B67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +444,7 @@
 		};
 		848840791B4AC6B3006A5B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41AD589B6845B822258FCE72 /* Pods-PlayList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayList/Info.plist;
@@ -357,6 +455,7 @@
 		};
 		8488407A1B4AC6B3006A5B67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C498970CEE9F94ECD91181 /* Pods-PlayList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayList/Info.plist;
@@ -418,6 +517,7 @@
 				8488407A1B4AC6B3006A5B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8488407B1B4AC6B3006A5B67 /* Build configuration list for PBXNativeTarget "PlayListTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +526,7 @@
 				8488407D1B4AC6B3006A5B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -437,6 +538,16 @@
 			);
 			currentVersion = 8488405D1B4AC6B3006A5B67 /* PlayList.xcdatamodel */;
 			path = PlayList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		84A389651B4CF43100C043CB /* SingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84A389661B4CF43100C043CB /* SingModel.xcdatamodel */,
+			);
+			currentVersion = 84A389661B4CF43100C043CB /* SingModel.xcdatamodel */;
+			path = SingModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
