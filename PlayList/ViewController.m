@@ -45,9 +45,7 @@ http://kilograpp.com:8080/songs/ - админка для добавления/у
 
 
 @property (nonatomic, strong) NSMutableArray * arrayPlayList;
-@property (nonatomic, weak) NSArray * arraySearchBar;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, assign) BOOL isSearchBarActive;
 
 
 @end
@@ -57,7 +55,6 @@ http://kilograpp.com:8080/songs/ - админка для добавления/у
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.arrayPlayList = [[NSMutableArray alloc]init];
-    self.isSearchBarActive = NO;
     //запрос к серверу (описан в отдельном классе: ManagerAPI)
     [[ManagerAPI managerWithDelegate:self]getDataFromWall:URL_METOD];
    
@@ -146,8 +143,6 @@ http://kilograpp.com:8080/songs/ - админка для добавления/у
     }
 
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
